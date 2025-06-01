@@ -1,3 +1,6 @@
+-- This query identifies the most commonly reported UFO shapes in the top 5 U.S. states with the highest number of sightings.
+
+
 WITH top_states AS
 (
     SELECT 
@@ -23,3 +26,12 @@ sightings.shape
 ORDER BY
 locations.state,
 count DESC
+
+
+/* Insights: 
+“Light” is the most commonly reported UFO shape in all top states.
+
+Shapes like circle, triangle, and fireball consistently appear among the top.
+
+The pattern is remarkably consistent across regions, suggesting either a shared perception or reporting bias.
+*/
